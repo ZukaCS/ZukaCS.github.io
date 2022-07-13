@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #000000;
+}
+
+.name {
+    cursor: pointer;
+    color: white;
+}
+
+.ul-links {
+    list-style: none;
+}
+
+.ul-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.ul-links li a {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.ul-links li a:hover {
+    color: blue;
+}
+
+main {
+    background-color: #F5EDDC;
+    height: 100%;
+    padding: 10px 10%;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 42px;
+}
+main .general h3 {
+    font-size: 26px;
+    text-align: center;
+}
+main .general p {
+    padding: 10px 0px;
+    text-align: justify;
+}
+main > .general {
+
+    padding-bottom: 20px;
+}
+main .general > div {
+    margin: 10px 20px 0px 20px;
+    width: 90%;
+    border: 2px solid black;
+    padding: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+@media (min-width: 800px){
+    main > .general {
+    display: flex;
+    justify-content: space-between;
+    }
+    main .general > div {
+        width: 25%;
+    }
+main .general > div:hover{
+    transform: scale(1.1);
+}
+}
+main .general .hobbies a  {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    color: black;
+    transition: all 0.3s ease;
+}
+.hobbies-links a {
+    padding-bottom: 5px;
+}
+main .general .hobbies a:hover{
+    color: blue !important;
+}
+
+.hobbies-showcase > div {
+    background-color: white;
+    width: 100%;
+    border: 2px solid gray;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.hobbies-showcase img {
+    max-width: 100%;
+}
+.hobbies-showcase div p {
+    text-align: center;
+    padding: 10px;
+}
+@media (min-width: 800px){
+    .hobbies-showcase{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hobbies-showcase > div {
+        width: 30%;
+        transition: all 0.3s ease;
+    }
+    .hobbies-showcase > div:hover {
+        transform: scale(1.05);
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
